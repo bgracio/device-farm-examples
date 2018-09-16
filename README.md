@@ -1,8 +1,6 @@
 # DeviceFarm Sample Tests
 
-    ⚠ Please note that all commands in this README file were created and tested in MacOS systems. For other operating systems some steps may be different 
-
-This repository contains examples of tests performed to OutSystems mobile applications using [Appium](http://appium.io/) and [AWS Device Farm](https://aws.amazon.com/pt/device-farm/).
+This repository contains examples of tests performed to OutSystems mobile applications using [Appium](http://appium.io/) and [AWS Device Farm](https://aws.amazon.com/pt/device-farm/). **Please note that all commands in this README file were created and tested in MacOS systems. For other operating systems some steps may be different.**
 
 **Appium** is a testing automation framework for Android and iOS mobile applications that allow us to test either native or hybrid applications.
 
