@@ -8,22 +8,35 @@ This repository contains examples of tests performed to OutSystems mobile applic
 
 ## Install Dependencies
 
-1. Install [Node.js](https://nodejs.org/) via [package manager](https://nodejs.org/en/download/package-manager/)
+1. Install [Brew](https://brew.sh/)
+
+    ```
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    ```
+
+2. Install [Java](https://www.java.com/en/) 8
+
+    ```
+    brew tap caskroom/versions
+    brew cask install java8
+    ```
+
+3. Install [Node.js](https://nodejs.org/) via [package manager](https://nodejs.org/en/download/package-manager/)
 
     ```
     brew install node
     ```
 
-2. Install [Python](https://www.python.org/) 2.7
+4. Install [Python](https://www.python.org/) 2.7
 
     ```
     brew install python@2
     ```
 
-3. Install [Appium](http://appium.io/)
+5. Install [Appium](http://appium.io/)
 
     ```
-    npm install -g appium@1.7.6
+    npm install -g appium@1.8.1
     npm install -g appium-doctor
     ```
 
@@ -147,20 +160,16 @@ This repository contains examples of tests performed to OutSystems mobile applic
     Start Android Emulator:
     ```
     $ANDROID_HOME/emulator/emulator -list-avds
-    ```
-    ```
     $ANDROID_HOME/emulator/emulator -avd Nexus_5X_API_28
     ```
 
     Start iOS Simulator:
     ```
     xcrun simctl list
-    ```
-    ```
     open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/
     ```
 
-3. Install the OutSystems app in your Android/iOS device. 
+3. Install an OutSystems app in your Android/iOS emulator.
 
     ![installAPK.gif](./assets/installAPK.gif "Install APK")
 
@@ -191,4 +200,4 @@ This repository contains examples of tests performed to OutSystems mobile applic
 
 ## Running your Tests in AWS Device Farm
 
-You have everyhting ready, but to run your tests in AWS Device Farm you just need to do a few more thing. Check [this](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-android-appium-python.html).
+You have everyhting ready, but to run your tests in AWS Device Farm you just need to do a few more things. Check [this](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-android-appium-python.html).
