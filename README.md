@@ -1,10 +1,10 @@
 # DeviceFarm Sample Tests
 
-This repository contains examples of tests performed to OutSystems mobile applications using [Appium](http://appium.io/) and [AWS Device Farm](https://aws.amazon.com/pt/device-farm/). **Please note that all commands in this README file were created and tested in MacOS systems. For other operating systems some steps may be different.**
+This repository contains examples of tests performed on OutSystems mobile applications using [Appium](http://appium.io/) and [AWS Device Farm](https://aws.amazon.com/pt/device-farm/). **Please note that all commands in this README file were created and tested in MacOS systems. For other operating systems some steps may be different.**
 
-**Appium** is a testing automation framework for Android and iOS mobile applications that allow us to test either native or hybrid applications.
+**Appium** is a testing automation framework for Android and iOS mobile applications that allows us to test either native or hybrid applications.
 
-**AWS Device Farm** is a cloud testing service that allows us to run our tests on real Android and iOS devices. After each run we have access to all test/device logs, screenshots, performance graphs and much more.
+**AWS Device Farm** is a cloud testing service that lets us run our tests on real Android and iOS devices. After each run we can access  all test/device logs, screenshots, performance graphs and much more.
 
 ## Install Dependencies
 
@@ -40,7 +40,7 @@ This repository contains examples of tests performed to OutSystems mobile applic
     npm install -g appium-doctor
     ```
 
-    After installing Appium, run **appium-doctor** in your terminal and check if you have everything ready to go. If not, please take your time and configure you machine in order for you to be able to run mobile tests.
+    After installing Appium, run **appium-doctor** on your machine and check if you have everything ready to go. If not, please take the time to configure your machine so you can run the mobile tests.
 
     ```
     $ appium-doctor --android
@@ -78,7 +78,7 @@ This repository contains examples of tests performed to OutSystems mobile applic
     info AppiumDoctor
     ```
 
-## Install Python Packages
+## Installing Python Packages
 
 1. Install [Virtualenv](https://pypi.org/project/virtualenv/)
 
@@ -90,7 +90,7 @@ This repository contains examples of tests performed to OutSystems mobile applic
 
 2. Install [Wheelhouse](https://pypi.org/project/Wheelhouse/)
 
-    **wheelhouse** is a local cache of python packages.
+    **wheelhouse** is a local cache of Python packages.
 
     ```
     pip install Wheelhouse
@@ -106,15 +106,15 @@ This repository contains examples of tests performed to OutSystems mobile applic
 
 4. Install [PyTest](https://pypi.org/project/pytest/)
 
-    **PyTest** is a framework for Python that make it easier to write tests.
+    **PyTest** is a framework for Python that makes writing tests easier.
 
     ```
     pip install pytest
     ```
 
-## Setup Test Project
+## Setting up the Test Project
 
-1. Create the project directory
+1. Create the project directory.
 
     ```
     $ virtualenv mytests
@@ -122,7 +122,7 @@ This repository contains examples of tests performed to OutSystems mobile applic
     $ source bin/activate
     ```
 
-2. Implement and store all your Python tests under **tests/** folder. To learn more about Selenium, please click [here](https://selenium-python.readthedocs.io/) and check the documentation.
+2. Implement and store all your Python tests under the **tests/** folder. To learn more about Selenium, please click [here](https://selenium-python.readthedocs.io/) and check the documentation.
 
     ```python
     import os
@@ -147,15 +147,15 @@ This repository contains examples of tests performed to OutSystems mobile applic
             unittest.main()
     ```
 
-## Running your Tests Locally
+## Running Your Local Tests
 
-1. Open the terminal and start the Appium server in your machine
+1. Open the terminal and start the Appium server on your machine.
 
     ```
     $ appium
     ```
 
-2. Connect your device or start the simulator.
+2. Connect your device to your machine or start the simulator.
 
     Start Android Emulator:
     ```
@@ -163,7 +163,7 @@ This repository contains examples of tests performed to OutSystems mobile applic
     $ANDROID_HOME/emulator/emulator -avd Nexus_5X_API_28
     ```
 
-    Start iOS Simulator:
+    Start the iOS Simulator:
     ```
     xcrun simctl list
     open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app/
@@ -173,7 +173,7 @@ This repository contains examples of tests performed to OutSystems mobile applic
 
     ![installAPK.gif](./assets/installAPK.gif "Install APK")
 
-4. Uncoment the desired capabilities for your target platform.
+4. Uncomment the desired capabilities for your target platform.
 
     For Android:
     ```
@@ -198,6 +198,6 @@ This repository contains examples of tests performed to OutSystems mobile applic
     $ py.test tests/login_test.py
     ```
 
-## Running your Tests in AWS Device Farm
+## Running Your Tests in AWS Device Farm
 
-You have everyhting ready, but to run your tests in AWS Device Farm you just need to do a few more things. Check [this](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-android-appium-python.html).
+Were almost there! To run your tests in AWS Device Farm you just need to do a few more things. Check [this](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-types-android-appium-python.html).
