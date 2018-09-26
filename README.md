@@ -1,4 +1,4 @@
-# DeviceFarm Sample Tests
+# DeviceFarm Tests Sample
 
 This repository contains examples of tests performed on OutSystems mobile applications using [Appium](http://appium.io/) and [AWS Device Farm](https://aws.amazon.com/pt/device-farm/). **Please note that all commands in this README file were created and tested in MacOS systems. For other operating systems some steps may be different.**
 
